@@ -70,8 +70,9 @@ p{
 
 #window {
   display: flex;
+  justify-content: space-between;
 }
 
-button {
+.btn-danger {
   margin-right: 20px;
 }

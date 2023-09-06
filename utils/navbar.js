@@ -4,10 +4,10 @@ const navBar = () => {
   const domString = `
     <nav>
       <div class="nav-item">
-        <p id="logo">Vocab-YOU-lary</p>
+        <button id="logo">Vocab-YOU-lary</button>
       </div>
       <div class="nav-item">
-        <p id="add-form">Create an Entry</p>
+        <button id="add-form">Create an Entry</button>
       </div>
       <div class="nav-item">
       <input
