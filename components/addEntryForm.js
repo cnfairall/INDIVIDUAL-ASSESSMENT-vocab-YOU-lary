@@ -4,7 +4,7 @@ import renderToDOM from '../utils/renderToDOM';
 const addEntryForm = (uid, obj = {}) => {
   clearDom();
   const domString = `
-  <form id="${obj.firebaseKey ? `update-author--${obj.firebaseKey}` : 'submit-author'}" class="mb-4">
+  <form id="${obj.firebaseKey ? `update-entry--${obj.firebaseKey}` : 'submit-entry'}" class="mb-4">
     <div class="form-group">
       <label for="name">Concept</label>
       <input type="text" class="form-control" id="name" placeholder="Enter concept here" value="${obj.name || ''}" required>

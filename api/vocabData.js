@@ -47,18 +47,18 @@ const createVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// // UPDATE BOOK
-// const updateBook = (payload) => new Promise((resolve, reject) => {
-//   fetch(`${endpoint}/books/${payload.firebaseKey}.json`, {
-//     method: 'PATCH',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(payload)
-//   }).then((response) => response.json())
-//     .then((data) => resolve(data))
-//     .catch(reject);
-// });
+// UPDATE VOCAB
+const updateVocab = (payload) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/entries/${payload.firebaseKey}.json`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  }).then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
 
 // // FILTER BOOKS BY CATEGORY
 // const booksOnSale = (uid) => new Promise((resolve, reject) => {
@@ -77,8 +77,7 @@ const createVocab = (payload) => new Promise((resolve, reject) => {
 
 // STRETCH...SEARCH VOCAB
 
-export { getVocab, createVocab };
+export { getVocab, createVocab, updateVocab };
 // vocabByCategory,
 // deleteVocab,
-// updateVocab,
 // };
