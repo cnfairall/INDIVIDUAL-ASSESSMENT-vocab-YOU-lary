@@ -1,16 +1,13 @@
 import renderToDOM from './renderToDOM';
-import ViewDirectorBasedOnUserAuthStatus from './viewDirector';
 
 const navBar = () => {
   const domString = `
     <nav>
-      <div class="nav-item active">
-        <a class="nav-link" href="#" id="all-books">
-          Vocab-YOU-lary <span class="sr-only">(current)</span>
-        </a>
+      <div class="nav-item">
+        <p id="logo">Vocab-YOU-lary</p>
       </div>
       <div class="nav-item">
-        <a class="nav-link" href="#" id="add-form">Create an Entry</a>
+        <p id="add-form">Create an Entry</p>
       </div>
       <div class="nav-item">
       <input
@@ -22,7 +19,6 @@ const navBar = () => {
       </div>
     </nav>`;
   renderToDOM('#navigation', domString);
-  ViewDirectorBasedOnUserAuthStatus();
 };
 
 export default navBar;

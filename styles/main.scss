@@ -23,14 +23,20 @@ body {
 #navigation {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;
 
+}
+
+p{
+  margin: 0;
 }
 
 .nav-item {
@@ -60,4 +66,12 @@ nav {
 
 .card-body {
   flex-wrap: wrap;
+}
+
+#window {
+  display: flex;
+}
+
+button {
+  margin-right: 20px;
 }

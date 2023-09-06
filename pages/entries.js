@@ -9,9 +9,6 @@ const emptyVocab = () => {
 const showVocab = (array) => {
   clearDom();
 
-  const btnString = '<button id="add-entry-btn">Add an Entry</button>';
-  renderToDOM('#add-button', btnString);
-
   let domString = '';
   if (!array.length) {
     domString += '<p>No Entries Found</p>';
