@@ -9,7 +9,7 @@ const emptyVocab = () => {
 const showVocab = (array) => {
   clearDom();
 
-  const btnString = '<button class="btn btn-success btn-lg mb-4" id="add-entry-btn">Add an Entry</button>';
+  const btnString = '<button id="add-entry-btn">Add an Entry</button>';
   renderToDOM('#add-button', btnString);
 
   let domString = '';
@@ -19,11 +19,11 @@ const showVocab = (array) => {
     array.forEach((item) => {
       domString += `
         <div class="card">
-          <div class="card-body" style="height: 180px;">
+          <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
               <p>${item.definition}"</p>
-              <i id="edit-book-btn--${item.firebaseKey}" class="fas fa-edit btn btn-info"></i>
-              <i id="delete-book-btn--${item.firebaseKey}" class="btn btn-danger fas fa-trash-alt"></i>
+              <i id="edit-book-btn--${item.firebaseKey}" class="fa-solid fa-pen-to-square"></i>
+              <i id="delete-book-btn--${item.firebaseKey}" class="fa-solid fa-trash-can"></i>
           </div>
         </div>`;
     });

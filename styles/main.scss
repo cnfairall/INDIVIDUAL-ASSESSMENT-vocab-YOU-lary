@@ -3,8 +3,48 @@
 
 
 body {
-  background-color: antiquewhite;
-  color: brown;
   text-align: center;
   margin-top: 100px;
+  
+}
+
+button {
+  background: rgba(53, 230, 215, 0.25);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: none;
+  margin: 15px;
+
+}
+
+#login-form-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#store {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  width: 20%;
+
+}
+
+.card-body {
+  flex-wrap: wrap;
 }
