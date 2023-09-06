@@ -3,12 +3,13 @@
 
 
 body {
+  background-color: rgb(184, 235, 218);
   text-align: center;
   margin-top: 100px;
   
 }
 
-button {
+#add-entry-btn {
   background: rgba(53, 230, 215, 0.25);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 4px );
@@ -16,12 +17,24 @@ button {
   border-radius: 10px;
   border: none;
   margin: 15px;
+  padding: 20px;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
 
 }
 
-#login-form-container {
-  display: flex;
-  justify-content: flex-end;
+.nav-item {
+  margin: 15px;
 }
 
 #store {
