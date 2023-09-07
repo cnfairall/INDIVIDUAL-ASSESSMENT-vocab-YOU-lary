@@ -73,26 +73,8 @@ const updateVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// // FILTER BOOKS BY CATEGORY
-// const booksOnSale = (uid) => new Promise((resolve, reject) => {
-//   fetch(`${endpoint}/books.json?orderBy="uid"&equalTo="${uid}"`, {
-//     method: 'GET',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//   }).then((response) => response.json())
-//     .then((data) => {
-//       const filteredBooks = Object.values(data).filter((book) => book.sale);
-//       resolve(filteredBooks);
-//     })
-//     .catch(reject);
-// });
-
 // STRETCH...SEARCH VOCAB
 
 export {
-  getVocab, createVocab, updateVocab, deleteVocab, getSingleEntry
+  getVocab, createVocab, updateVocab, deleteVocab, getSingleEntry,
 };
-
-// vocabByCategory,
-// };
