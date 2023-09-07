@@ -1,5 +1,6 @@
 import { emptyVocab, showVocab } from '../pages/entries';
-import { getVocab, deleteVocab } from '../api/vocabData';
+import { getVocab, deleteVocab, getSingleEntry } from '../api/vocabData';
+import addEntryForm from '../components/addEntryForm';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
@@ -18,6 +19,11 @@ const domEvents = (user) => {
           });
         });
       }
+    }
+    // CLICK EVENT EDITING AN ENTRY
+    if (e.target.id.includes('edit-vocab')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      getSingleEntry(firebaseKey).then((Obj) => addEntryForm(user.uid, Obj));
     }
   });
 };

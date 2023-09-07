@@ -47,6 +47,19 @@ const createVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+// GET SINGLE ENTRY
+const getSingleEntry = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/entries/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 // UPDATE VOCAB
 const updateVocab = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/entries/${payload.firebaseKey}.json`, {
@@ -78,7 +91,7 @@ const updateVocab = (payload) => new Promise((resolve, reject) => {
 // STRETCH...SEARCH VOCAB
 
 export {
-  getVocab, createVocab, updateVocab, deleteVocab
+  getVocab, createVocab, updateVocab, deleteVocab, getSingleEntry
 };
 
 // vocabByCategory,

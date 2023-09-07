@@ -22,6 +22,22 @@ const formEvents = (user) => {
         });
       });
     }
+    // CLICK EVENT FOR SUBMITTING FORM TO EDIT BOOK
+    if (e.target.id.includes('update-entry')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      const payload = {
+        name: document.querySelector('#name').value,
+        definition: document.querySelector('#definition').value,
+        category: document.querySelector('#category').value,
+        time: e.timeStamp,
+        uid: user.uid,
+        firebaseKey,
+      };
+
+      updateVocab(payload).then(() => {
+        getVocab(user.uid).then(showVocab);
+      });
+    }
   });
 };
 
