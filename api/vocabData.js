@@ -22,17 +22,17 @@ const getVocab = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// DELETE BOOK
-// const deleteBook = (firebaseKey) => new Promise((resolve, reject) => {
-//   fetch(`${endpoint}/books/${firebaseKey}.json`, {
-//     method: 'DELETE',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//   }).then((response) => response.json())
-//     .then(resolve)
-//     .catch(reject);
-// });
+// DELETE ENTRY
+const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/entries/${firebaseKey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  }).then((response) => response.json())
+    .then(resolve)
+    .catch(reject);
+});
 
 // CREATE VOCAB
 const createVocab = (payload) => new Promise((resolve, reject) => {
@@ -77,7 +77,9 @@ const updateVocab = (payload) => new Promise((resolve, reject) => {
 
 // STRETCH...SEARCH VOCAB
 
-export { getVocab, createVocab, updateVocab };
+export {
+  getVocab, createVocab, updateVocab, deleteVocab
+};
+
 // vocabByCategory,
-// deleteVocab,
 // };

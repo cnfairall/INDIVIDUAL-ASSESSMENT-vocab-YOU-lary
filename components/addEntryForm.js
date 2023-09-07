@@ -11,11 +11,11 @@ const addEntryForm = (uid, obj = {}) => {
     </div>
     <div class="form-group">
       <label for="definition">Definition</label>
-      <input type="text" class="form-control" id="definition" placeholder="Enter definition here" value="${obj.definition || ''}"required>
+      <input type="text" class="form-control" id="definition" placeholder="Enter definition here" value="${obj.definition || ''}" required>
     </div>
     <div class="form-group">
       <label for="category">Category</label>
-      <input type="text" class="form-control" id="category" placeholder="Enter language or tech" value="${obj.category || ''}"required>
+      <input type="text" class="form-control" id="category" placeholder="Enter language or tech" value="${obj.category || ''}" required>
     </div>
     <button type="submit" class="btn btn-primary mt-3">Submit Entry</button>
   </form>`;

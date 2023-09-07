@@ -70,7 +70,11 @@ p{
 }
 
 .card-body {
+  display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+
 }
 
 #window {
@@ -80,4 +84,17 @@ p{
 
 .btn-danger {
   margin-right: 20px;
+  background-color: rgb(23, 23, 28);
+  border: none;
+}
+
+i {
+  margin: 25px;
+}
+
+#category {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: rgb(139, 181, 245);
 }

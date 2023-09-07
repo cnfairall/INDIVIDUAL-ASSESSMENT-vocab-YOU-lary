@@ -9,6 +9,7 @@ const formEvents = (user) => {
       const payload = {
         name: document.querySelector('#name').value,
         definition: document.querySelector('#definition').value,
+        category: document.querySelector('#category').value,
         time: e.timeStamp,
         uid: user.uid
       };
