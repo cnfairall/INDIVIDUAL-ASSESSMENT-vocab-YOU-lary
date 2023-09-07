@@ -50,6 +50,11 @@ p{
  
 }
 
+#main-container {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -70,7 +75,7 @@ p{
 
 #window {
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
 }
 
 .btn-danger {

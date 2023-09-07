@@ -6,13 +6,13 @@ import logoutButton from '../components/logoutButton';
 import navigationEvents from '../events/navigationEvents';
 import formEvents from '../events/formEvents';
 
-const startApp = () => {
-  domBuilder();
+const startApp = (user) => {
+  domBuilder(user);
+  formEvents(user);
   navBar();
   logoutButton();
-  navigationEvents();
-  formEvents();
-  getVocab().then((array) => {
+  navigationEvents(user);
+  getVocab(user.uid).then((array) => {
     if (array.length) {
       showVocab(array);
     } else {
