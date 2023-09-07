@@ -1,0 +1,36 @@
+{
+  "entries": {
+    "-NdhOMpxAbCic5-Jo0cs": {
+      "category": "CSS",
+      "definition": "Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces. ",
+      "firebaseKey": "-NdhOMpxAbCic5-Jo0cs",
+      "name": "Flexbox",
+      "time": 150973.39999997616,
+      "uid": "hMuHPS2jrsQkOjbnBoUGuWGSt7H2"
+    },
+    "-NdhP3cWH0p-TRwamBtN": {
+      "category": "JavaScript",
+      "definition": "The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.",
+      "firebaseKey": "-NdhP3cWH0p-TRwamBtN",
+      "name": "Promise",
+      "time": 334448.8000000119,
+      "uid": "hMuHPS2jrsQkOjbnBoUGuWGSt7H2"
+    },
+    "-NdhPs84cMkAKiEq3dv3": {
+      "category": "JavaScript",
+      "definition": "The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.",
+      "firebaseKey": "-NdhPs84cMkAKiEq3dv3",
+      "name": "addEventListener()",
+      "time": 127881.89999997616,
+      "uid": "hMuHPS2jrsQkOjbnBoUGuWGSt7H2"
+    },
+    "-NdhR2s8gRXbOP2G3ODG": {
+      "category": "HTML",
+      "definition": "HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. ",
+      "firebaseKey": "-NdhR2s8gRXbOP2G3ODG",
+      "name": "HTML",
+      "time": 180942.39999997616,
+      "uid": "hMuHPS2jrsQkOjbnBoUGuWGSt7H2"
+    }
+  }
+}
