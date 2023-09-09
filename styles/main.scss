@@ -7,7 +7,6 @@ body {
   background-color: rgb(184, 235, 218);
   text-align: center;
   margin-top: 50px;
-  padding: 10px;
   
 }
 
@@ -90,10 +89,10 @@ p{
 
 }
 
-#window {
-  display: flex;
-  justify-content: stretch;
-}
+// #window {
+//   display: flex;
+//   justify-content: stretch;
+// }
 
 .btn-danger {
   margin-top: 15px;
@@ -188,4 +187,12 @@ form {
   background-color: #c5e688;
   color: black;
   text-shadow: none;
+}
+
+#googleAuth {
+  margin-left: auto;
+}
+
+#login-button-container {
+  justify-content: center;
 }

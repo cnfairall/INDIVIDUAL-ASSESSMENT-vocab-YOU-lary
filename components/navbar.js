@@ -10,7 +10,8 @@ const navBar = () => {
   <div class="nav-item">
     <a class="nav-link" id="add-form">Add an Entry</a>
   </div>
-</nav>
+    <a class="nav-link" id="googleAuth"></a>
+  </nav>
 `;
   renderToDOM('#navigation', domString);
 };

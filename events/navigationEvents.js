@@ -23,7 +23,7 @@ const navigationEvents = (user) => {
       getVocab(user.uid).then((array) => {
         switch (e.target.id) {
           case 'css':
-            filterByCategory(array, 'CSS/Sass');
+            filterByCategory(array, 'CSS');
             break;
           case 'js':
             filterByCategory(array, 'JavaScript');
