@@ -2,22 +2,16 @@ import renderToDOM from '../utils/renderToDOM';
 
 const navBar = () => {
   const domString = `
-    <nav>
-      <div class="nav-item">
-        <button id="logo">Vocab-YOU-lary</button>
-      </div>
-      <div class="nav-item">
-        <button id="add-form">Create an Entry</button>
-      </div>
-      <div class="nav-item">
-      <input
-        class="form-control mr-sm-2"
-        id="search"
-        placeholder="Search Vocab"
-        aria-label="Search"
-      />
-      </div>
-    </nav>`;
+  <nav id="nav" class="navbar">
+  <a class="navbar-brand" id="logo">vocab<span id="you">YOU</span>lary</a>
+  <div class="nav-item">
+    <a class="nav-link" id="home">Home</a>
+  </div>
+  <div class="nav-item">
+    <a class="nav-link" id="add-form">Add an Entry</a>
+  </div>
+</nav>
+`;
   renderToDOM('#navigation', domString);
 };
 

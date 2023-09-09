@@ -4,12 +4,12 @@ const filterBtns = () => {
   const domString = `
     
     <div id="filter-btn-group">
-      <button id="all" type="button" class="btn btn-primary css">All</button>
-      <button id="css" type="button" class="btn btn-primary css">CSS/Sass</button>
-      <button id="js" type="button" class="btn btn-primary js">JavaScript</button>
-      <button id="html" type="button" class="btn btn-primary html">HTML</button>
-      <button id="react" type="button" class="btn btn-primary react">React</button>
-      <button id="api" type="button" class="btn btn-primary api">API</button>
+      <button id="all" type="button" class="btn btn-primary all">All</button>
+      <button id="css" type="button" class="btn btn-primary CSS">CSS/Sass</button>
+      <button id="js" type="button" class="btn btn-primary JavaScript">JavaScript</button>
+      <button id="html" type="button" class="btn btn-primary HTML">HTML</button>
+      <button id="react" type="button" class="btn btn-primary React">React</button>
+      <button id="api" type="button" class="btn btn-primary API">API</button>
     </div>  
   `;
   renderToDOM('#filter-container', domString);

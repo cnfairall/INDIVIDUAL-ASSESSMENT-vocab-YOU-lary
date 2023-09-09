@@ -8,7 +8,7 @@ const navigationEvents = (user) => {
     .addEventListener('click', () => {
       addEntryForm();
     });
-  document.querySelector('#logo')
+  document.querySelector('#home')
     .addEventListener('click', () => {
       getVocab(user.uid).then((array) => {
         if (array.length) {

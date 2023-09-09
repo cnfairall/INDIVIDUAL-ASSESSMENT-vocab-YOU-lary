@@ -2,7 +2,7 @@ import clearDom from '../utils/clearDOM';
 import renderToDOM from '../utils/renderToDOM';
 
 const emptyVocab = () => {
-  const domString = '<h1>No Entries Found</h1>';
+  const domString = '<p>No Entries Found</p>';
   renderToDOM('#store', domString);
 };
 
@@ -19,7 +19,7 @@ const showVocab = (array) => {
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p>${item.definition}"</p>
-            <p id="category">${item.category}</p>
+            <p id="category" class="${item.category}">${item.category}</p>
             <div class="btn-container">
               <i id="edit-vocab-btn--${item.firebaseKey}" class="fa-solid fa-pen-to-square"></i>
               <i id="delete-vocab-btn--${item.firebaseKey}" class="fa-solid fa-trash-can"></i>
