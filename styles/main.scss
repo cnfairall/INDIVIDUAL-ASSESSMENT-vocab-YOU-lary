@@ -6,13 +6,12 @@
 body {
   background-color: rgb(184, 235, 218);
   text-align: center;
-  margin-top: 50px;
   
 }
 
 #logo {
   font-family: Gochi Hand;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 #add-entry-btn {
@@ -89,11 +88,6 @@ p{
 
 }
 
-// #window {
-//   display: flex;
-//   justify-content: stretch;
-// }
-
 .btn-danger {
   margin-top: 15px;
   margin-right: 20px;
@@ -165,7 +159,10 @@ i {
 
 #banner {
   background: url('https://c4.wallpaperflare.com/wallpaper/409/439/735/backdrop-blackboard-chalk-chalkboard-wallpaper-preview.jpg');
-  height: 100px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover ;
+
 
 }
 

@@ -11,7 +11,7 @@ const addEntryForm = (uid, obj = {}) => {
     </div>
     <div class="form-group">
       <label for="definition">Definition</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter definition here" value="${obj.definition || ''}" required></textarea>
+      <textarea class="form-control" id="definition" rows="3" placeholder="Enter definition here" value="${obj.definition || ''}" required></textarea>
     </div>
     <div class="form-group">
       <label for="category">Category</label>
