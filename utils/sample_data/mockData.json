@@ -31,6 +31,14 @@
       "name": "HTML",
       "time": 180942.39999997616,
       "uid": "hMuHPS2jrsQkOjbnBoUGuWGSt7H2"
+    },
+    "-Ne3hsb7E4VoX81Vx5Tx": {
+      "category": "API",
+      "definition": "An API, which stands for application programming interface, is a set of protocols that enable different software components to communicate and transfer data. ",
+      "firebaseKey": "-Ne3hsb7E4VoX81Vx5Tx",
+      "name": "API",
+      "time": "13997.5",
+      "uid": "hMuHPS2jrsQkOjbnBoUGuWGSt7H2"
     }
   }
 }
