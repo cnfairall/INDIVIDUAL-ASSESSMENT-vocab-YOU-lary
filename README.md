@@ -1,80 +1,33 @@
-# Q2 - Individual Assessment: Vocab-YOU-lary
+# VocabYOUlary  [![Netlify Status](https://api.netlify.com/api/v1/badges/4ab7e730-7ed3-4cfd-a988-66195e79a991/deploy-status)](https://app.netlify.com/sites/drt-sortinghat/deploys)
 
-[VIEW PROJECT INSTRUCTIONS](./PROJECT_INSTRUCTIONS.MD)
+VocabYOUlary is an app that helps students stay on top of and demonstrate their learning about important concepts in coding and development.
 
-## Topics
-- [Get Started](#get-started)
-- [Starting the Project](#starting-the-project)
-- [Other important tidbits](#other-important-tidbits)
-    - [Console messages](#console-messages)
-    - [Including images with webpack](#including-images-with-webpack)
-    - [Importing CSS](#importing-cssscss)
-    - [Deploying on Netlify](#deploying-on-netlify)
-___
+[View App](#your-link)
 
-## Get Started
+## About the User
+- Tech students are the ideal users for this app.
+- They want to keep track of tech concepts they've learned and make sure they can explain them in their own words.
+- VocabYOUlary solves the problem of ensuring comprehension by allowing students to write, update, read and delete their own personal collection of tech terms.
 
-1. Clone your new repo to your local machine
+## Features
+- When the user adds a vocab entry, a new object is created that is stored to the database and prints to the DOM.
+-The user can choose a category (language or technology area) that best describes the entry, which is displayed on the vocab card.
+- Category Colors: The color of the category badge is specific to each category.
+- Card filtering: Select a category button to only view cards in that category.
+- When the user clicks on the edit button, they can update the entry with new information.
+-When the user clicks the delete button, a confirmation window appears, and confirming the delete removes the specific card from the database and re-renders the collection.
 
-## Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name.
-1. Rename the `.sample.env` file to `.env` file. The final file name should be `.env`
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short.
-1. To start your application, run `npm start`
+## Video Walkthrough of APP NAME <!-- A loom link is sufficient -->
+https://www.loom.com/share/829b90d831ea441ba2db6bea724af210
 
-### If you see this, you are set to go!
-![lit-screen](https://user-images.githubusercontent.com/29741570/190486162-27e9032d-266f-4962-a85c-fc40c58f33db.png)
+## Relevant Links 
+- [Check out the deployed site](#your-link)
+- [User flow chart](#https://www.figma.com/file/AGKvjYrkqzokECfVBx9P4Y/Vocab-flow?type=whiteboard&node-id=0%3A1&t=6KYQ1YOQsMQ5u61S-1)
+- [Wireframe](#https://www.figma.com/file/IW4jF3GnzCFLYbEXlgFNIZ/MVP?type=design&node-id=0-1&mode=design&t=kMpLJzS2GQG1LV2w-0)
+- [Project Board](#your-link)
 
-**NOTES:** 
-- Changes you make to the project will make the browser reload on save...no more hard refresh unless something goes wrong.
-- You will no longer be using the `hs -o` command. To start your server, you will run `npm start`
+## Project Screenshots <!-- These can be inside of your project. Look at the repos from class and see how the images are included in the readme -->
+<img width="1148" alt="Your Alt" src="your-link.png">
 
-## Other Important Tidbits
-### Console messages
-From this time forward, you will be expected to have a clean console in order for your assignments to be approved. This means that the use of `console.log` is acceptable **_(debugger is WAY better though)_** while developing, but will throw an error in your console like the image below, but all `logs` will have to be removed. You may use `console.error` and `console.warn` in your code however for messages. These need to all be removed before pushing to production unless they contain vital info for the user/developer.
-
-![notacceptable](https://user-images.githubusercontent.com/29741570/190486163-3dd8640f-5dda-4f73-9436-6020fc9e00c4.png)
-
-### Including Images with Webpack
-If you have a folder of local images that you want to load into your code things get a little strange with webpack.  Remember the only way webpack knows about assets is if they are imported into your javascript files.  Even our CSS is not added until those files are imported into our javascript files.  Below is some sample code for how to load a local image file into your project
-
-```js
-import cat from './assets/cat.jpg';
-
-let domString = `<img src=${cat} alt="picture of a cat"/>`;
-
-document.getElementById('cat').innerHTMl = domString;
-```
-
-### Importing CSS/SCSS
-**NOTE:** We will be using SCSS files. They are used the same way your CSS files work, with some added benefits that we will discuss later.
-
-Since Webpack is making the connection to the JS and CSS for us and we are no longer manually adding links or script tags to our HTML, we have to get our styles to the application some way...
-
-Here is how we add our styles using webpack:
-
-```js
-import '../styles/main.scss';
-
-const init = () => {
-  document.querySelector('#app').innerHTML = '<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
-};
-
-init();
-```
-
-### Deploying on Netlify
-
-- Build Command: `npm run build`
-- Publish directory: `dist`
-- Add Environmental Variables (NOT REQUIRED for Apps that do not use API Keys, etc)
-    - Any Enviromental variables you are using in your `.env` file should be added to Netlify. 
-        - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there.
-
-- Update Firebase URL Settings
-    - In Firebase under Authentication select sign in methods, scroll to Authorized domains. Add your Netlify URL.
-        
-## More Info and Resources on Webpack
-- Visit the [Webpack documentation](https://webpack.js.org/concepts/) if you want to explore more.
-- [Info on our Webpack Config](https://github.com/nss-nightclass-projects/Night-Class-Resources/blob/master/book-2-patterns-and-tools/chapters/webpack-configure.md)
+## Contributors
+- [YOUR NAME](https://github.com/your-github-url)

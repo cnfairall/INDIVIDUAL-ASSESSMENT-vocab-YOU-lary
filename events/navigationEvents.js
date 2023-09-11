@@ -8,7 +8,7 @@ const navigationEvents = (user) => {
     .addEventListener('click', () => {
       addEntryForm();
     });
-  document.querySelector('#logo')
+  document.querySelector('#home')
     .addEventListener('click', () => {
       getVocab(user.uid).then((array) => {
         if (array.length) {
@@ -23,7 +23,7 @@ const navigationEvents = (user) => {
       getVocab(user.uid).then((array) => {
         switch (e.target.id) {
           case 'css':
-            filterByCategory(array, 'CSS/Sass');
+            filterByCategory(array, 'CSS');
             break;
           case 'js':
             filterByCategory(array, 'JavaScript');
